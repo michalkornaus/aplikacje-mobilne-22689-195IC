@@ -1,6 +1,10 @@
-import { Platform, StyleSheet, StatusBar } from "react-native";
+import { StyleSheet } from "react-native";
+import { StretchOutY } from "react-native-reanimated";
 
 export default StyleSheet.create({
+  content:{
+    marginTop: 10,
+  },
   navigationBar: {
     flexDirection: "row",
     display: 'flex',
@@ -12,8 +16,8 @@ export default StyleSheet.create({
     flex: 1,
     shadowColor: 'rgba(0,0,0, .6)',
     shadowOffset: { height: 1, width: 1 },
-    shadowOpacity: 1, 
-    shadowRadius: 1, 
+    shadowOpacity: 1,
+    shadowRadius: 1,
     backgroundColor: '#fff',
     height: 35,
     justifyContent: 'center',
@@ -21,50 +25,21 @@ export default StyleSheet.create({
     flexDirection: 'row',
     marginRight: 1,
   },
-  box1: {
-    width: 340,
-    height: 100,
+  container: {
+    flex: 1,
     justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "lightgray",
-    borderWidth: 1,
-    borderStyle: "solid",
-    borderColor: "darkslategray",
-    marginBottom: 15,
-    padding: 5,
+    display: "flex",
+    flexDirection: "row",
   },
-  boxText: {
-    color: "darkslategray",
-    fontWeight: "bold",
+  lazyContainer:{
+    display: "flex",
+    flexDirection: "row",
   },
-  content1: {
-    flexDirection: "column",
-    alignItems: "center",
+  indicatorContent: {
+    marginTop: 250,
+    display: "flex",
+    flexDirection: "row",
     justifyContent: "space-around",
-    ...Platform.select({
-    ios: { paddingTop: 20 },
-    android: { paddingTop: StatusBar.currentHeight }
-    })
-  },
-  box2: {
-    height: 160,
-    width: 160,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'lightgray',
-    borderWidth: 1,
-    borderStyle: "solid",
-    borderColor: 'darkslategray',
-    margin: 10,
-    padding: 5,
-  },
-  content2: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    alignItems: 'center',
-    ...Platform.select({
-      ios: { paddingTop: 20 },
-      android: { paddingTop: StatusBar.currentHeight }
-      })
+    alignItems: "center",
   },
 });
