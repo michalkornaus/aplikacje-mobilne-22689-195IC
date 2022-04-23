@@ -28,8 +28,8 @@
 #### Kawałek kodu z ekranu pierwszego, który pokazuje wypełnienie tabeli stoma pseudolosowymi liczbami przy pomocy metody fill() oraz map(). Metoda filterAndSort pozwala na jednoczesne filtrowanie i sortowanie całego zbioru danych liczbowego.
 ![screen13](/Lab3/img/13.png)
 #### Widok ekranu drugiego w którym renderuje leniwe ładowanie przy pomocy metody fetchItems.
-![screen14](/Lab3/img/14.png)
+![screen14](/Lab3/img/14.PNG)
 #### Metoda fetchItems korzysta z kolejnego komponentu api, który pokazany jest na kolejnym zrzucie ekranu
-![screen15](/Lab3/img/15.png)
+![screen15](/Lab3/img/15.PNG)
 #### W pliku LazyListAPI generują się pseudolosowe ciągi i wysyłane są przy pomocy metody fetchItems oraz funkcji Promise.resolve.
-![screen16](/Lab3/img/16.png)
+![screen16](/Lab3/img/16.PNG)
