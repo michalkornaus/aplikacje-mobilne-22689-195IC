@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { View, Text, TouchableOpacity } from "react-native";
+import {Picker} from '@react-native-picker/picker';
 import styles from "./styles";
 
 export default function Page2({ navigation }) {
+  const [selectedValue, setSelectedValue] = useState("csharp");
   return (
     <View>
       <View style={styles.navigationBar}>
@@ -19,12 +21,38 @@ export default function Page2({ navigation }) {
           <Text>5</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.lazyContainer}>
-
+      <View>
+        <Picker
+          selectedValue={selectedValue}
+          style={styles.input}
+          onValueChange={(itemValue, itemIndex)=>setSelectedValue(itemValue)}
+        >
+          <Picker.Item label="C#" value="csharp"/>
+          <Picker.Item label="C++" value="cplus"/>
+          <Picker.Item label="C" value="c"/>
+        </Picker>
+        <Picker
+          selectedValue={selectedValue}
+          style={styles.input}
+          onValueChange={(itemValue, itemIndex)=>setSelectedValue(itemValue)}
+        >
+          <Picker.Item label="C#" value="csharp"/>
+          <Picker.Item label="C++" value="cplus"/>
+          <Picker.Item label="C" value="c"/>
+        </Picker>
+        <Picker
+          selectedValue={selectedValue}
+          style={styles.input}
+          onValueChange={(itemValue, itemIndex)=>setSelectedValue(itemValue)}
+        >
+          <Picker.Item label="C#" value="csharp"/>
+          <Picker.Item label="C++" value="cplus"/>
+          <Picker.Item label="C" value="c"/>
+        </Picker>
       </View>
     </View>
   );
 }
 Page2.navigationOptions = {
-  title: "2"
+  title: "Komponent Select"
 };

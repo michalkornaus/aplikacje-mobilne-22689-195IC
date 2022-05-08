@@ -2,6 +2,9 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   content:{
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     marginTop: 10,
   },
   navigationBar: {
@@ -30,15 +33,88 @@ export default StyleSheet.create({
     display: "flex",
     flexDirection: "row",
   },
-  lazyContainer:{
+  input: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+  },
+  dateView: {
+    marginTop: 20,
+  },
+  topDateView: {
     display: "flex",
+    flexDirection: "row",
+    alignContent: "space-between",
+  },
+  inputNum: {
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+    color: "red"
+  },
+  switchContainer: {
+    marginTop: 20,
+    display: "flex",
+    justifyContent: "center",
     flexDirection: "row",
   },
-  indicatorContent: {
-    marginTop: 250,
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-around",
+  switch:{
     alignItems: "center",
+    backgroundColor: "white",
+    borderRadius: 20,
+    padding: 20,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5
   },
+
+  centeredView: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 22
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: "white",
+    borderRadius: 10,
+    padding: 25,
+    alignItems: "center",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 3
+  },
+  button: {
+    borderRadius: 20,
+    padding: 10,
+    elevation: 2
+  },
+  buttonOpen: {
+    backgroundColor: "#F194FF",
+  },
+  buttonClose: {
+    backgroundColor: "#2196F3",
+  },
+  textStyle: {
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "center"
+  },
+  modalText: {
+    marginBottom: 15,
+    textAlign: "center"
+  }
 });
