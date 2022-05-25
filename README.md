@@ -1,40 +1,26 @@
 ### aplikacje-mobilne-22689-195IC
-## Lab4 - Obsługa danych wprowadzanych przez użytkownika + modale
+## Lab5 - Obsługa gestów użytkownika
 
-#### Pierwszym komponentem potrzebnym do obsługi danych użytkownika jest komponent TextInput dzięki któremu możemy wprowadzać dane.
-![screen1](/Lab4/img/1.PNG)
-#### Po zmianie w pierwszym inpucie, zmienia sie input trzeci, którego nie można edytować.
-![screen2](/Lab4/img/2.PNG)
-#### Drugi input jest inputem numerycznym, możemy wpisać do niego jedynie cyfry
-![screen3](/Lab4/img/3.PNG)
-![screen4](/Lab4/img/4.PNG)
-#### Ostatni czwarty input zmienia rozkład klawiatury aby łatwiej wpisać adres e-mail ponieważ zmienia przecinek na znak małpy.
-![screen5](/Lab4/img/5.PNG)
-#### Na drugim ekranie mamy do dyspozycji 3 selecty w których mamy dostępne 3 różne opcje.
-![screen6](/Lab4/img/6.PNG)
-#### Po zmianie jednego w każdym innym również zmienia się ta opcja.
-![screen7](/Lab4/img/7.PNG)
-#### Na trzecim ekranie ukazany jest switch, który po przełączeniu on/off pokaże modal.
-![screen8](/Lab4/img/8.PNG)
-#### Po przełączeniu switcha widzimy nasz modal wraz z wygenerowaną liczbą pseudolosową. Możemy również ukryć modal.
-![screen9](/Lab4/img/9.PNG)
-#### Po zamknięciu modala i ponownym przełączeniu switcha ukazuje nam się znowu modal lecz tym razem z inną liczbą.
-![screen10](/Lab4/img/10.PNG)
-#### Na czwartym ekranie możemy przetestować działanie komponentu/pakietu DateTimePicker. Są dostępne trzy przyciski, w jednym z nich wybierzemy datę, w drugim czas, a trzeci pokaże nam alerta z całym terminem który wybraliśmy.
-![screen11](/Lab4/img/11.PNG)
-#### Widok wyboru daty
-![screen12](/Lab4/img/12.PNG)
-#### Widok wyboru czasu
-![screen13](/Lab4/img/13.PNG)
-#### Pokazany alert z terminem
-![screen14](/Lab4/img/14.PNG)
-#### Na ostatnim piątym ekranie mamy prawie to samo co na trzecim ekranie lecz tym razem z dodatkiem komponentu ToastAndroid - czyli pasywnego modalu/powiadomienia.
-![screen15](/Lab4/img/15.PNG)
-#### Po ukryciu modalu, po jednej sekundzie dostajemy komunikat o jego zamknięciu. Powiadomienie to samo zniknie nie musimy ingerować w stan komunikatu.
-![screen16](/Lab4/img/16.PNG)
-#### Zrzut ekranu kodu źródłowego ekranu pierwszego - różne wariacje komponentu TextInput
-![screen17](/Lab4/img/17.PNG)
-#### Zrzut ekranu trzeciego - jak widzimy mamy komponent Modal który zawiera w sobie cały kawałek strony który zostanie wyświetlony po ukazaniu. Niżej w komponencie Switch, po przełączeniu go, uruchamiają się 3 funkcje, która zmienia faktyczny stan switcha, generuje liczbę oraz zmienia stan modalu.
-![screen18](/Lab4/img/18.PNG)
-#### Zrzut czwartego ekranu, gdzie możemy wybrać datę oraz czas. Jak widać dzięki zaimportowanemu komponentowi nie zajmuje to dużo kodu i jest dość proste do zaimplelentowania.
-![screen19](/Lab4/img/19.PNG)
+#### Pierwszym komponenetem jest ScrollView dzięki któremu otrzymujemy łatwą i przejrzystą metodę przewijania elementów na naszej stronie. Na pierwszym ekranie znajduje się 10 boxów, na drugim zrzucie widzimy dół listy z widocznym scrollbarem.
+![screen1](/Lab5/img/1.jpg)
+![screen2](/Lab5/img/2.jpg)
+#### Na drugim ekranie znajduje się 12 boxów, tym razem inaczej rozmieszczonych w dwie kolumny wraz z lekkimi zmianiamy z ekranu 1.
+![screen3](/Lab5/img/3.jpg)
+![screen4](/Lab5/img/4.jpg)
+#### Na trzecim ekranie znajdują się elementy Touchable (Opacity i Highlight) wraz z komponentem WebView. Na poniższym zrzutach pokazane jest użycie komponentów Touchable. Różnią się od siebie stylem po naciśnieciu elementu; W przypadku Opacity przycisk zmienia swoją przeźroczystość, Highlight zmienia swój kolor lecz działanie mają takie same. Dodatkowo przyciski mają przypisane funkcje dodawania i odejmowania.
+![screen5](/Lab5/img/5.jpg)
+![screen6](/Lab5/img/6.jpg)
+#### Na poniższym zrzucie ekranu ukazane jest działanie komponentu WebView który wyświetla wybraną przez nas stronę w specjalnym widoku.
+![screen7](/Lab5/img/7.jpg)
+#### W takim widoku możemy się swobodnie poruszać jak na normalnej stronie internetowej oraz dzięki przyciskowi możemy równie szybko zamknąć ten widok.
+![screen8](/Lab5/img/8.jpg)
+#### Na ostatnim czwartym ekranie zademonstrowane jest działanie komponentu Swipeable.
+![screen9](/Lab5/img/9.jpg)
+#### Z prawej strony elementu swipeable po przesunięciu palcem dostajemy dwa przyciski.
+![screen10](/Lab5/img/10.jpg)
+#### Z lewej strony po geście palcem możemy zmienić stan komponentu (w tym wypadku zmienieć kolor tła)
+![screen11](/Lab5/img/11.jpg)
+#### Po przesunięciu palcem widzimy że zmienił się kolor całego komponentu.
+![screen12](/Lab5/img/12.jpg)
+![screen13](/Lab5/img/13.jpg)
+![screen14](/Lab5/img/14.jpg)
