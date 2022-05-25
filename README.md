@@ -18,5 +18,6 @@
 #### Z lewej strony po geście palcem możemy zmienić stan komponentu (w tym wypadku zmienieć kolor tła)
 <img src="/Lab5/img/11.jpg" width="360" height="800"> 
 #### Po przesunięciu palcem widzimy że zmienił się kolor całego komponentu.
-<img src="/Lab5/img/12.jpg" width="360" height="800"> <img src="/Lab5/img/13.jpg" width="360" height="800">
+<img src="/Lab5/img/12.jpg" width="360" height="800">
+<img src="/Lab5/img/13.jpg" width="360" height="800">
 <img src="/Lab5/img/14.jpg" width="360" height="800">
