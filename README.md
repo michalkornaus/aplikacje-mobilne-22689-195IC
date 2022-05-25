@@ -2,8 +2,7 @@
 ## Lab5 - Obsługa gestów użytkownika
 
 #### Pierwszym komponenetem jest ScrollView dzięki któremu otrzymujemy łatwą i przejrzystą metodę przewijania elementów na naszej stronie. Na pierwszym ekranie znajduje się 10 boxów, na drugim zrzucie widzimy dół listy z widocznym scrollbarem.
-<img src="/Lab5/img/1.jpg" width="360" height="800">
-<img src="/Lab5/img/2.jpg" width="360" height="800">
+<img src="/Lab5/img/1.jpg" width="360" height="800"><img src="/Lab5/img/2.jpg" width="360" height="800">
 #### Na drugim ekranie znajduje się 12 boxów, tym razem inaczej rozmieszczonych w dwie kolumny wraz z lekkimi zmianiamy z ekranu 1.
 <img src="/Lab5/img/3.jpg" width="360" height="800">
 <img src="/Lab5/img/4.jpg" width="360" height="800">
