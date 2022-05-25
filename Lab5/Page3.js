@@ -25,13 +25,14 @@ export default function Page3({ navigation }) {
         </TouchableOpacity>
       </View>
       <View style={styles.container3}>
+
         <Text style={styles.countText}>
-            Ilość kliknąć: {count || null}
+            Ilość kliknięć: {count || null}
         </Text>
+
         <TouchableOpacity
           style={styles.button}
-          onPress={onPressMinus}
-        >
+          onPress={onPressMinus}>
           <Text>Opacity -1</Text>
         </TouchableOpacity>
 
@@ -41,13 +42,15 @@ export default function Page3({ navigation }) {
 
         <TouchableOpacity
           style={styles.button}
-          onPress={setValueWeb}
-        >
+          onPress={setValueWeb}>
           <Text>WebView</Text>
         </TouchableOpacity>
+
         {web ?
             <WebView source={{ uri: 'https://zacniewski.github.io/tasks-mobile-apps-react-native/#lab5' }}/>
-            : null }
+            : null 
+        }
+
       </View>
     </View>
   );
